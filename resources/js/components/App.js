@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './Home';
+import DataFetching from './DataFetching';
+// import PostList from './PostList';
 
 function App() {
     return (
         <div className="container">
-            <Home />
+            <DataFetching />
+            {/* <PostList /> */}
         </div>
     );
 }
