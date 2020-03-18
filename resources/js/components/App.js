@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Home from './Home';
 
 function App() {
     return (
         <div className="container">
-           This is a sample component - run watch
+            <Home />
         </div>
     );
 }
