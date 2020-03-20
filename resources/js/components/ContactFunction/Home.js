@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 import axios from "axios";
 
 
@@ -14,7 +14,7 @@ class Home extends Component{
     }
 
     componentDidMount(){
-        axios.get('/api/contact')
+        axios.get('/api/contacts')
             .then(response => {
                  this.state({
                      contacts : response.data

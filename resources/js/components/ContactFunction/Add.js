@@ -13,6 +13,7 @@ class Add extends Component {
 
         this.handleNameInputChange = this.handleNameInputChange.bind(this)
         this.handleTelInputChange = this.handleTelInputChange.bind(this)
+        this.handFormSubmit = this.handFormSubmit.bind(this)
     }
 
     handleNameInputChange(event) {

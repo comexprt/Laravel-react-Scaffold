@@ -69784,6 +69784,7 @@ var Add = /*#__PURE__*/function (_Component) {
     };
     _this.handleNameInputChange = _this.handleNameInputChange.bind(_assertThisInitialized(_this));
     _this.handleTelInputChange = _this.handleTelInputChange.bind(_assertThisInitialized(_this));
+    _this.handFormSubmit = _this.handFormSubmit.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -69954,7 +69955,7 @@ var Home = /*#__PURE__*/function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('/api/contact').then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('/api/contacts').then(function (response) {
         _this2.state({
           contacts: response.data
         });

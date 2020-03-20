@@ -14,7 +14,7 @@ class ContactsController extends Controller
 
     public function create(Request $request){
         $contact = Contact::create([
-            'name' = $request->name,
+            'name' => $request->name,
             'tel' => $request->tel
          ]);
 
@@ -28,7 +28,7 @@ class ContactsController extends Controller
 
     public function update(Request $request, $id){
         $contact = Contact::find($id)->update([
-            'name' = $request->name,
+            'name' => $request->name,
             'tel' => $request->tel
          ]);
 

@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/contact', 'ContactsController@index');
+Route::get('/contacts', 'ContactsController@index');
 Route::post('/contact/create', 'ContactsController@create');
 Route::get('/contact/{id}edit', 'ContactsController@edit');
 Route::put('/contact/{id}update', 'ContactsController@update');
