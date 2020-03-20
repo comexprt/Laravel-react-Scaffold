@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('app');
-// });
+Route::get('{reactRoutes}', function () {
+    return view('app');
+})->where('reactRoutes','^((?|api).)*$');
 
-Route::view('/{path?}', 'app');
+// Route::view('/{path?}', 'app');

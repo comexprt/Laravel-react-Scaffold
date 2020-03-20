@@ -1,14 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DataFetching from './DataFetching';
-// import PostList from './PostList';
+import {BrowserRouter as Router , Route, Switch} from 'react-router-dom'
+import Home from './ContactFunction/Home';
+import Add from './ContactFunction/Add';
+import Edit from './ContactFunction/Edit';
+
 
 function App() {
     return (
-        <div className="container">
-            <DataFetching />
-            {/* <PostList /> */}
-        </div>
+        <Router>
+             <Switch>
+                   <Route path="/" exact component={Home} />
+                   <Route path="/add" exact component={Add} />
+                   <Route path="/:id/edit" exact component={Edit} />
+                   
+             </Switch>
+        </Router>
+        
     );
 }
 
